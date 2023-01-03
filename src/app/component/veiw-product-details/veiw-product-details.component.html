@@ -1,0 +1,36 @@
+<nav class="navbar navbar-light bg-primary">
+    <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#"><i class="bi bi-arrow-left"> &nbsp;</i><b>Top Deals</b></a>
+    </div>
+</nav>
+
+
+
+<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+    <div class="container mt-2">
+        <p>Showing Medicine Availability and Price in</p>
+    </div>
+</nav>
+
+<div class="containner py-5 mt-4">
+    <div class="row ">
+        <div class="col-5 mt-4 m-auto text-center">
+            <img [src]="productDetails?.productImageSlug[0]" alt="" width="320" height="320">
+        </div>
+        <div class="col-5 mt-4 mx-2 ">
+            <div class=" me-5">
+                <h2>ELECTRAL POWDER 4.4GM</h2>
+                <p class="mt-2 py-2 ms-4"><span class="fs-6 text-muted text-decoration-line-through">MRP &nbsp; ₹ {{productDetails?.actualPrice}} /-*</span> <span class="ms-5 fs-4 fw-bolder">₹ {{productDetails?.discountPrice}} /-*</span> </p>
+                <div class="mt-5">Manufacturer Name - FDC Ltd </div>
+                <div>Manufacturer Address - FDC LIMITED, B-8, MIDC Area, Waluj - 431 136, Dist. Aurangabad, Maharashtra
+                </div>
+                <div> Country Of Origin - India </div>
+                <div> Expires On or After - Jan 2024</div>
+                <div class="mt-3">
+                    <button type="button" class="btn btn-primary ">Add to Cart</button>
+                    <button type="button" class="btn btn-outline-primary ms-3">Continue Shoppig</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

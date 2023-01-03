@@ -1,0 +1,76 @@
+<div class="container">
+    <div class="row">
+        <div>Top Deals</div>
+        <owl-carousel-o [options]="customOptions">
+            <ng-container *ngFor="let slide of topDeals">
+                <ng-template carouselSlide [id]="slide.id">
+                    <div class="card" style="width: 236px; height: 400px; ">
+                        <div class="card-body" [routerLink]="['/veiw-product-details',slide.drugCode]">
+                            <!-- <img [src]="slide.productImageSlug[0]" class="card-img-top" alt="..."> -->
+                            <img [src]="slide.productImageSlug[0]" [alt]="slide.alt" [title]="slide.title">
+                            <h5 class="card-title card-description" [title]="slide.description">{{slide.description}}
+                            </h5>
+                            <h6 class="text-muted">{{slide.type}}</h6>
+                            <p>MRP &nbsp;<s>{{slide.actualPrice}}</s></p>
+                            <p>₹ {{slide.discountPrice}}</p>
+                        </div>
+                    </div>
+                </ng-template>
+            </ng-container>
+        </owl-carousel-o>
+    </div>
+</div>
+
+
+<div class="container mt-5">
+    <h2 class="mt-5">Order Medicines through Prescription</h2>
+    <div class="row mt-3 py-3 shadow-sm border ">
+        <div class="col-sm-6">
+            <div class="card ">
+                <div class="card-body ">
+
+                    <h5 class="card-title">Upload Prescription to place order</h5>
+                    <p class="card-text">Upload only .jpg .png or .pdf files, size limit is 15 MB</p>
+
+                    <a href="#" class="btn btn-primary">Order vai Prescription &nbsp;<i
+                            class="bi bi-arrow-right"></i></a>
+                    <h6 class="text-primary mt-3">How To Order&nbsp;?</h6>
+                    <div class="col-md-3">
+                        <img src="../../../assets/images/rx.svg" class="ms-5" alt="" height="175px" width="150px">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Don't have a Prescription?</h5>
+                    <p class="card-text">Consult Top Doctors Online and order medicines through valid prescriptions.</p>
+                    <a href="#" class="btn btn-primary">Start Consultaion &nbsp;<i class="bi bi-arrow-right"></i></a>
+                    <div class="col-md-3">
+                        <img src="../../../assets/images/med-consultation.svg" class="ms-5" alt="" height="175px"
+                            width="150px">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container ">
+    <h2 class="mt-5">Past Orders</h2>
+    <div class="text-center">
+        <p>
+            <img src="../../../assets/images/user-login.svg" alt="" height="80" class="display-center">
+        </p>
+        <span><a href="">Login </a> to see your past orders.</span>
+    </div>
+</div>
+
+<div class="container mt-5 py-3 ">
+    <div class="row ">
+        <div class="">
+            <img src="https://www.medibuddy.in/assets/banners/app-banner.webp" alt="" width="1112px" height="377px" class="">
+        </div>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+.card-block{
+    box-shadow: 0 0 10px rgb(24 24 24 / 16%);
+    border-radius: 20px;
+    margin: 0%;
+}
+
+.card-description{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.p{
+    margin: 0 0 10px;
+}
+.p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.p,img {
+    vertical-align: middle;
+    
+}
+.span,a{
+    text-decoration: none;
+}
+
